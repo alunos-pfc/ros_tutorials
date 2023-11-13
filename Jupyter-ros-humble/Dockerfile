@@ -7,11 +7,9 @@ ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update \
  && apt-get install -y \
-        bzip2 \
-        ca-certificates \
         curl \
         git \
- && apt-get clean
+ && rm -rf /var/lib/apt/lists/*
 
 # Download and install Micromamba.
 RUN curl -sL https://micro.mamba.pm/api/micromamba/linux-64/1.5.1 \
