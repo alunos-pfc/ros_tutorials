@@ -2,6 +2,15 @@
 
 This Docker image provides a Jupyter environment with ROS (Robot Operating System) capabilities, making it convenient for roboticists and developers working in ROS.
 
+## Cloning the Repository
+
+Before building the Docker image, clone this repository and navigate to the Jupyter-ros-humble directory:
+
+```
+git clone https://github.com/alunos-pfc/ros_tutorials.git
+cd ros_tutorials/Jupyter-ros-humble
+```
+
 ## Building the Image
 
 To build the Docker image, run the following command:
