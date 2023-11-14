@@ -1,6 +1,15 @@
 # Testing with Melodic image
 > Trying to install jupyterlab, nbdev and pytorch in Ros_Melodic_Desktopfull image.
 ## Steps
+* Pulling the image
+```
+docker pull osrf/ros:melodic-desktop-full
+```
+* Running the container
+```
+docker run -it --shm-size=32g --network="host" --name melodic osrf/ros:melodic-desktop-full
+```
+* Update
 ```
 apt update
 ```
