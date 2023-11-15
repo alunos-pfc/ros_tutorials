@@ -4,11 +4,11 @@ This Docker image provides a Jupyter environment with ROS (Robot Operating Syste
 
 ## Cloning the Repository
 
-Before building the Docker image, clone this repository and navigate to the ros-humble-inside-jupyter directory:
+Before building the Docker image, clone this repository and navigate to the ros-inside-jupyter directory:
 
 ```
 git clone https://github.com/alunos-pfc/ros_tutorials.git
-cd ros_tutorials/ros-humble-inside-jupyter
+cd ros_tutorials/ros-inside-jupyter
 ```
 
 ## Building the Image
@@ -16,7 +16,7 @@ cd ros_tutorials/ros-humble-inside-jupyter
 To build the Docker image, run the following command:
 
 ```bash
-docker build -t ros-humble-inside-jupyter .
+docker build -t ros-inside-jupyter .
 ```
 
 ## Running the Image
@@ -24,7 +24,7 @@ docker build -t ros-humble-inside-jupyter .
 To start the Jupyter server, use the following command:
 
 ```bash
-docker run -it -p 8888:8888 ros-humble-inside-jupyter
+docker run -it -p 8888:8888 ros-inside-jupyter
 ```
 
 ## Activating Micromamba Environment and Installing Jupyros
