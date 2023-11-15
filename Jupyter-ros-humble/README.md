@@ -27,38 +27,28 @@ To start the Jupyter server, use the following command:
 docker run -it -p 8888:8888 jupyter-ros-humble
 ```
 
-## Activating Micromamba Environment
+## Activating Micromamba Environment and Installing Jupyros
 
-After starting the container, activate the Micromamba environment by running:
+After starting the container, activate the Micromamba environment and install Jupyros using pip by running:
 
 ```bash
 micromamba activate ros_env
-```
-
-## Installing Jupyros
-
-Inside the activated environment, install Jupyros using pip:
-
-```bash
 pip install --pre jupyros==0.7.0a0
 ```
 
-## Testing with TurtleSim
-
-Clone this repository and open the TurtleSim.ipynb notebook to test the ROS integration. Use the following commands:
-
-```
-git clone https://github.com/alunos-pfc/ros_tutorials.git
-cd ros_tutorials/Jupyter-ros-humble
-```
-
-
 ## Starting Jupyter Lab
 
-Once Jupyros is installed and the repository is cloned, start Jupyter Lab with the following command:
+Once micromamba environment is active and Jupyros is installed, start Jupyter Lab with the following command:
 
 ```bash
-jupyter lab --port=8888 --no-browser --ip=0.0.0.0 --allow-root --ContentsManager.allow_hidden=True
+jupyter lab --port=8888 --no-browser --ip=0.0.0.0 --allow-root
 ```
 
 Access Jupyter Lab by navigating to the provided link in your web browser.
+
+## Running ROS
+
+In the Jupyter Lab interface, open the TurtleSim notebook and run the code cells to see ROS in action.
+
+It should look like this:
+![Jupyter Lab interface running TurtleSim ](screenshot.png)
