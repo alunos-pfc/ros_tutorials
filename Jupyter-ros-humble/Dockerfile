@@ -7,6 +7,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update \
  && apt-get install -y \
+        bzip2 \
         curl \
         git \
  && rm -rf /var/lib/apt/lists/*
@@ -23,4 +24,6 @@ ENV PATH="/bin/micromamba/bin:$PATH"
 
 RUN micromamba create -n ros_env jupyter-ros jupyterlab ros-noetic-desktop -c conda-forge -c robostack -y
 RUN micromamba shell init --shell=bash --prefix="$MAMBA_ROOT_PREFIX"
-WORKDIR /root
+
+WORKDIR /root/
+COPY TurtleSim.ipynb /root/TurtleSim.ipynb
