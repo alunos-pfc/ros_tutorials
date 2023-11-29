@@ -1,7 +1,7 @@
 # Imagem oficial do ros noetic
 from osrf/ros:noetic-desktop-full 
 
-# Realizando update, instalando pip e o git curl
+# Instalando pip, git e curl
 RUN apt update
 RUN apt-get install -y python3-pip
 RUN apt install git curl -y
