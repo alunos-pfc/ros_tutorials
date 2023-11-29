@@ -6,6 +6,9 @@ RUN apt update
 RUN apt-get install -y python3-pip
 RUN apt install git curl -y
 
+# Editor de texto
+RUN apt install nano
+
 # Instalando jupyterlab e nbdev
 RUN pip install jupyterlab nbdev
 
