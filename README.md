@@ -2,14 +2,6 @@
 
 Welcome to our team's Docker and ROS learning repository. This repository is a place for us to learn, share, and document our discoveries about Docker, Docker image creation, and ROS (Robot Operating System).
 
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
-
-### Prerequisites
-
-What things you need to install the software and how to install them:
-
 - Docker: [Installation guide](https://docs.docker.com/get-docker/)
 - ROS: [Installation guide](http://wiki.ros.org/ROS/Installation)
 - ROS 2: [Installation guide](https://docs.ros.org/en/humble/Installation.html)
