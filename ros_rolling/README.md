@@ -7,26 +7,25 @@ Using the [osrf/ros:rolling-desktop-full](https://hub.docker.com/r/osrf/ros/tags
 0 - clone this repository, and change to this directory (will be clonnig to HOME dir):
 
 ```bash
-    git clone https://github.com/alunos-pfc/ros_tutorials.git  ~/
-    cd ~/ros_tutorials/ros_rolling
+git clone https://github.com/alunos-pfc/ros_tutorials.git  ~/
+cd ~/ros_tutorials/ros_rolling
 ```
 
 1 - Build the docker running the command:
 
 ```bash
-    docker build -t img-ros-rolling .
+docker build -t img-ros-rolling .
 ```
 
 2 - Run:
 
 ```bash
-  ./run.bash img-ros-humble
+./run.bash img-ros-humble
 ```
 
 3 - If you need to open another terminal, run:
 ```bash
-    chmod +x join.bash
-  ./join.bash img-ros-humble --no-nvidia
+./join.bash img-ros-rolling
 ```
 
 
