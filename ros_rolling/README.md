@@ -34,3 +34,5 @@ docker build -t img-ros-rolling .
 ## Tutorials
 
 * [ROS2 Documentation: Rolling](https://docs.ros.org/en/rolling/Tutorials.html)
+
+* [ROS2 Navigation Stack](https://www.youtube.com/playlist?list=PLBbhfIdh4NdhOhVq0VcuCvdqOn6zdmQ3b)
